@@ -151,3 +151,7 @@ https://ithelp.ithome.com.tw/articles/10226191
 
 ![image](https://github.com/user-attachments/assets/6afe4c70-4110-483d-ae65-699dcc0eb117)
 
+![image](https://github.com/user-attachments/assets/dfff3c0b-424f-44ed-9fc5-e9422966cad1)  
+
+![image](https://github.com/user-attachments/assets/d642aae2-d0eb-4b99-a5c1-50687db22ba3)
+
