@@ -21,3 +21,21 @@ W15|5/26(講座)；5/30
 W16|final：6/2；6/6  
 
 
+4/14  
+- introduction to concumency
+- motivation
+- challenge
+- opitimization
+- implementation
+keyword
+- thread
+- PC(program counter)in x86 call rip
+- Pthread(POSIX)
+- rip-relative addressing(PIC = position-independent-code)
+- non-deterministic execution
+- critical section = block of code can shared
+- race condition
+- mutual exclusion 互斥mutex
+- guard
+- test-and-set
+- atomicity
