@@ -54,15 +54,20 @@ keyword
 - concurrency Bugs
   - deadlock bug
   - non-deadlock bugs  
+  
 4/28  
 - concurrency Bugs
-  - deadlock bug
+  - deadlock bug  
+    這塊沒什麼問題，理解4個條件，若P則Q；非Q則非P的關係，以及在consumer/producer的情境4條件的意義。  
   - non-deadlock bugs
     - atomicity violation
-    - order violation
+      參考https://hackmd.io/@sysprog/concurrency-atomics  
+    - order violation  
+      這兩個還待理解。  
 - semaphore types
   - unnamed semaphores(memory-based)
-  - named semaphores(file-based)
+  - named semaphores(file-based)  
+  33:00 如果是2個process之間的thread要synchronize，但semaphore存在P1的heap裡面，那會有問題。這時就會用到不同types的semaphore。(待確認  
 - I/O devices
   - memory-mapped I/O
   - explicit I/O instructions
