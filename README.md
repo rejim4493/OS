@@ -45,6 +45,9 @@ keyword
   1.atomic execution(原子操作)  
   2.event ordering(事件排序)  
   3.producer/consumer(生產者/消費者)  
+    若一個 thread 先取得某個 lock，另一個 thread 則無法繼續執行，雙方互相等待對方釋放資源，導致永遠無法前進，這就是死鎖（deadlock）的情況。  
+    或者更精簡一點：  
+    當兩個 thread 各自持有一部分資源，並且等待對方釋放另一部分資源，雙方互相等待而永遠無法繼續，這種情況稱為死鎖。  
 - concurrency Bugs
 - deadlock bug
 - non-deadlock bugs
