@@ -42,13 +42,27 @@ keyword
 4/25
 - semaphores(號誌)  
   applications(應用)  
-  1.atomic execution(原子操作)  
-  2.event ordering(事件排序)  
+  1.atomic execution(原子操作)
+    - atomic execution 是指利用初始值為 1 的 semaphore 保護 critical section，透過 sem_wait() 取得資源、sem_post() 釋放資源，保證同一時間只有一個 thread 能進入該區域，達成互斥控制。
+    - 說明它是保護 critical section 的互斥操作，sem_wait/sem_post 本身是 atomic  
+  2.event ordering(事件排序)
+    - event ordering 是指透過初始值為 0 的 semaphore，在 thread A 執行 sem_post()，再讓 thread B 執行 sem_wait()，來保證 A 的某個事件（例如初始化資源）發生在 B 的動作（如使用資源）之前。這樣就建立了 A 在 B 之前的事件順序。  
   3.producer/consumer(生產者/消費者)  
     若一個 thread 先取得某個 lock，另一個 thread 則無法繼續執行，雙方互相等待對方釋放資源，導致永遠無法前進，這就是死鎖（deadlock）的情況。  
     或者更精簡一點：  
     當兩個 thread 各自持有一部分資源，並且等待對方釋放另一部分資源，雙方互相等待而永遠無法繼續，這種情況稱為死鎖。  
 - concurrency Bugs
-- deadlock bug
-- non-deadlock bugs
-
+  - deadlock bug
+  - non-deadlock bugs  
+4/28  
+- concurrency Bugs
+  - deadlock bug
+  - non-deadlock bugs
+    - atomicity violation
+    - order violation
+- semaphore types
+  - unnamed semaphores(memory-based)
+  - named semaphores(file-based)
+- I/O devices
+  - memory-mapped I/O
+  - explicit I/O instructions
