@@ -39,3 +39,13 @@ keyword
 - guard
 - test-and-set
 - atomicity
+4/25
+- semaphores(號誌)
+  applications(應用)
+  1.atomic execution(原子操作)
+  2.event ordering(事件排序)
+  3.producer/consumer(生產者/消費者)
+- concurrency Bugs
+- deadlock bug
+- non-deadlock bugs
+
